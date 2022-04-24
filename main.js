@@ -1,5 +1,6 @@
-import { SectionCreator } from "./join-us-section.js";
-import { validator } from "./src/email-validator.js";
+/* eslint-disable linebreak-style */
+import { SectionCreator } from './join-us-section.js';
+import { validator } from './src/email-validator';
 import './styles/style.css'
 
 const factory = new SectionCreator;
