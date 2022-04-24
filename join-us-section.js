@@ -1,3 +1,4 @@
+/* eslint-disable max-classes-per-file*/ 
 let instance = null;
 
 class Section {
