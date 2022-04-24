@@ -56,7 +56,7 @@ class Section {
   }
 }
 
-export class SectionCreator {
+export default class SectionCreator {
   create(type) {
     switch(type) {
       case 'standard':
