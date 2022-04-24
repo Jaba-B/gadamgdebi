@@ -48,7 +48,7 @@ class Section {
 
         emailBtn.addEventListener('click', (enteredValue) => {
           enteredValue.preventDefault();
-          console.log(enteredValue);
+          console.log(enteredValue); // eslint-disable-line no-console
         }, false);
       });
       instance = this;
