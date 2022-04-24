@@ -49,7 +49,7 @@ class Section {
         emailBtn.addEventListener('click', (enteredValue) => {
           enteredValue.preventDefault();
           console.log(enteredValue);
-        }, false)
+        }, false);
       });
       instance = this;
     }
@@ -72,4 +72,4 @@ export default class SectionCreator {
       child.remove();
     }, 1000);
   }
-};
+}
