@@ -25,10 +25,6 @@ export const validator = setTimeout(()=> {
                 localStorage.removeItem('email');
                 input.value = '';
             }
-            // input.style.display = 'none';
-            // btn.style.height = '42px';
-            // btn.innerHTML = 'Unsubscribe';
-            // form.style.justifyContent = 'center';
         } else {
             alert('false');
         }
