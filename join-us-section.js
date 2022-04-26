@@ -24,7 +24,7 @@ class Section {
         emailInput.setAttribute('type', 'email');
         emailInput.setAttribute('placeholder', 'Email');
         const emailBtn = document.createElement('button');
-        emailBtn.setAttribute('type', 'submit');
+        emailBtn.setAttribute('type', 'button');
         emailBtn.textContent = btnText;
         main.insertBefore(section, footer);
         section.appendChild(div);
@@ -46,6 +46,12 @@ class Section {
         emailInput.classList.add('added-section__email-input');
         emailBtn.classList.add('added-section__email-btn');
 
+
+        let storageEmail = localStorage.getItem('email');
+        if(storageEmail.length > 0) {
+          emailInput.value = storageEmail;
+        }
+
         emailBtn.addEventListener('click', (enteredValue) => {
           enteredValue.preventDefault();
           console.log(enteredValue); // eslint-disable-line no-console
@@ -56,7 +62,7 @@ class Section {
   }
 }
 
-export default class SectionCreator {
+export class SectionCreator {
   create(type) {
     switch(type) {
       case 'standard':
