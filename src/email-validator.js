@@ -10,9 +10,9 @@ export const validator = setTimeout(()=> {
         if(ending === validEmailEndings[0] && start.length > 0 
             || ending === validEmailEndings[1] && start.length > 0 
             || ending === validEmailEndings[2] && start.length > 0) {
-            alert('true');
+            
         } else {
-            alert('false');
+            
         }
     }, false);
 }, 1000);
