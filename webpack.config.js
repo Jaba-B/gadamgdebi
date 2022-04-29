@@ -34,6 +34,11 @@ module.exports = {
         }),
         new MiniCssExtractPlugin()
     ],
+    devServer: {
+        proxy: {
+            '/api':'http://localhost:3000',
+        }
+    }
     // devServer: {
     //     static: {
     //       directory: path.join(__dirname, 'dist'),
